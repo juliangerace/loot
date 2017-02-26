@@ -54,12 +54,11 @@
 }
 
 .thumbnail{
-    margin: 10 auto; 
+    margin: 0 auto; 
     position:relative;
     text-align: center;
     height:40em;
     overflow:hidden;
-    border: 0;
 }
 
 @media (min-width: 768px) {
@@ -111,6 +110,13 @@
         font-size: 1em;
         margin-bottom: -2em;
     }
+       .map {
+        max-width: 80%;
+        height:auto;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 /*Custom inbetween for hero image and header*/
 @media (min-width: 500px) {
@@ -131,6 +137,10 @@
     .pitch {
         font-size: 1.2em;
         margin-bottom: -1;
+    }
+    .map {
+        max-width: 50%;
+        height:auto;
     }
 
 }
