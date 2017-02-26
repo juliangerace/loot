@@ -1,0 +1,82 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+<div style="background-color:#46B4CE">
+    <br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-5">
+                <a href="/index.html"><button type="button" class="btn" style="background-color:white; color:#46B4CE; width:30%; display: block; margin-right: auto; margin-left: auto; ">head home</button></a>
+            </div>
+        </div>
+    </div>
+    <form action="index.html" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+          
+          <label>Are you looking for full-time or part-time work?</label>
+          <input type="radio" id="full_time" value="full_time" name="work_pref"><label for="full_time" class="light">full time</label><br>
+          <input type="radio" id="part_time" value="part_time" name="work_pref"><label for="part_time" class="light">part time</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Your profile</legend>
+          <label for="bio">Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="metro">Metro Area:</label>
+        <select id="metro" name="user_metro">
+          <optgroup label="New York City">
+            <option value="Manhattan">Manhattan</option>
+            <option value="Queens">Queens</option>
+            <option value="Brooklyn">Brooklyn</option>
+            <option value="Bronx">The Bronx</option>
+            <option value="Staten_Island">Staten Island</option>
+          </optgroup>
+          <optgroup label="Philadelphia">
+            <option value="north_philly">North Philly</option>
+            <option value="man_rox_ucity">Manayunk/Roxborough/University City</option>
+            <option value="south_philly">South Philly</option>
+          </optgroup>
+          <optgroup label="Baltimore">
+            <option value="inner_harbor">Inner Harbor</option>
+            <option value="cherry_hill">Cherry Hill</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="harrisburg">Harrisburg, PA</option>
+            <option value="trenton">Trenton, NJ</option>
+          </optgroup>
+        </select>
+        
+          <label>In order to ensure quality service, loot requires all messengers to pass through their training program.<br>Are you able/willing to:</label>
+          <input type="checkbox" id="drugtest" value="drugtestyes" name="user_interest"><label class="light" for="development">Pass a drug test</label><br>
+            <input type="checkbox" id="seminar" value="seminaryes" name="user_interest"><label class="light" for="design">Attend a saftey and navigation seminar</label><br>
+          <input type="checkbox" id="submitw4" value="w4yes" name="user_interest"><label class="light" for="business">Submit a W4</label>
+        
+        </fieldset>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+
+    <br><br><br>
+        </div>div>
+    </body>
+</html>
