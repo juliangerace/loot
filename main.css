@@ -1,0 +1,314 @@
+.header {
+    background-color: #46B4CE !important;
+    background:  url(images/loot-whiteArtboard%201@0.75x.png) no-repeat center center;
+    background-size: 30%;
+    position: relative;
+    margin-top: 25px;
+    height: 20em;
+}
+
+
+.btn{
+   margin-left:10px;
+    background-color:#46B4CE;
+    color: white;  
+}
+
+/*navbar AKA hell*/
+.navbar {
+    margin-top: -30px;
+    margin-right: -40px;
+
+}
+
+.navbar-transparent .navbar-nav > li > a, .navbar-transparent .navbar-brand {color: #292727; border-radius: 10px;!important background-color: #46B4CE!important;}
+.navbar-transparent .navbar-nav > li > a:hover {background-color: #46B4CE!important; color: #ffffff!important; border-radius: 10px!important;}
+.navbar-transparent .navbar-nav > li > a:focus {color: #46B4CE; background-color: #FFFFFF; border-radius: 0;}
+
+
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: #46B4CE;}
+.collapsing ul li a, .in ul li a {color: #FFFFFF!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: #46B4CE!important; background-color: white!important;}
+}
+
+
+.navbar .navbar-collapse  {
+  text-align: center;
+}
+
+/*Hero image*/
+
+.lootIntro{
+    position: absolute;
+    background: none repeat scroll 0 0 rgba(209, 209, 209, 0.42);
+    margin:  5%;
+    margin-top: -60%;
+    text-align:center;
+    position: relative;
+    width:50%;
+    border-radius: 10px;
+}
+.game-change {
+    font-size: 2.5em;
+}
+
+.thumbnail{
+    margin: 10 auto; 
+    position:relative;
+    text-align: center;
+    height:40em;
+    overflow:hidden;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .lootIntro {
+    position: absolute;
+    background: none repeat scroll 0 0 rgba(209, 209, 209, 0.42);
+    margin: 10 auto;
+    margin-top: -60%;
+    text-align:center;
+    position: relative;
+    width:50%;
+    border-radius: 10px;
+    }
+}
+/*extra small devices*/
+@media (min-width: 300px) {
+    .header {
+    background-size: 55%;
+    height: 10em;
+  }
+    .lootIntro {
+    width: 60%;
+    background: none repeat scroll 0 0 rgba(145, 145, 145, 0.6);
+    margin-top: -55%;
+  }
+    .game-change {
+        font-size: 170%;
+  }
+    .hero-line {
+        margin-top: .7em;
+        margin-bottom: 0.7em;
+  }
+    .hero-sub {
+        font-size: 100%;
+    }
+    .thumbnail{
+      height: 13em;
+      margin-top: -1.5em;
+    }
+    .lootBlue {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: -2.5em;
+    }
+    .delivery {
+        font-size: 1.8em;
+    }
+    .pitch {
+        font-size: 1em;
+        margin-bottom: -2em;
+    }
+}
+/*Custom inbetween for hero image and header*/
+@media (min-width: 500px) {
+    .thumbnail {
+        height:22em;
+        margin-top:-1.3em;
+    }
+    .header {
+        height: 16em;
+    }
+    .lootBlue {
+        width:50%;
+    }
+    .delivery {
+        font-size: 2em;
+    
+    }
+    .pitch {
+        font-size: 1.2em;
+        margin-bottom: -1;
+    }
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header {
+        background-size: 40%;
+        height: 13em;
+    }
+    .game-change {
+        font-size: 230%;
+    }
+    .hero-line {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    .hero-sub {
+        font-size: 130%;
+    }
+    .lootIntro {
+        margin-top: -55%;
+    }
+    .thumbnail { 
+        height:25em;
+    }
+    .lootBlue {
+        width:50%;
+        margin-bottom: 0;
+    }
+    .delivery {
+        font-size: 3em;
+    }
+    .pitch {
+        font-size: 1.4em;
+        margin-bottom: 0;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header {
+        background-size: 30%;
+    }
+    .game-change {
+        font-size: 330%;
+    }
+    .hero-line {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .hero-sub {
+        font-size: 160%;
+    }
+    .thumbnail {
+        height: 42em;
+        margin-top: -1.5em;
+    }
+    h1 {
+        font-size: 100%;
+    }
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.hire {
+    position: absolute;
+    margin-top: -0px; 
+}
+.lootHire{
+    position: absolute;
+    background: none repeat scroll 0 0 rgba(209, 209, 209, 0.42);
+    margin:  45%;
+    margin-top: -50%;
+    text-align:center;
+    width:50%;
+    border-radius: 10px;
+}
+.hire-image {
+    margin-top: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
