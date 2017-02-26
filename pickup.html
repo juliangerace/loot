@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     
     <head>
@@ -11,6 +12,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        
 
     </head>
     
@@ -57,83 +61,174 @@
             <br>
             <hr style="background-color: #46B4CE; height: 1px; margin: 0%;">
             <br>
-            <div class="row">
+            <div class="row" style="background-color: #46B4CE;">
                 <div class="col-sm-8 col-sm-offset-2">
-            <form>
-              <div class="col-sm-6">
-                <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>  
-              </div>
-                <div class="col-sm-6">
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  <small id="passwordHelp" class="form-text text-muted">If you don't have a loot account, one will be created for you upon checkout. Your details will be in your order confirmation email.</small>
-              </div>
-                </div>
-              <div class="form-group">
-                <label for="exampleSelect1">Example select</label>
-                <select class="form-control" id="exampleSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleTextarea">Example textarea</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-              </div>
-              <fieldset class="form-group">
-                <legend>Radio buttons</legend>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    Option one is this and that&mdash;be sure to include why it's great
-                  </label>
-                </div>
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Option two can be something else and selecting it will deselect option one
-                  </label>
-                </div>
-                <div class="form-check disabled">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                    Option three is disabled
-                  </label>
-                </div>
-              </fieldset>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                  Check me out
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-                    </div>
-            </div>
-        </div>
+                                <!-- Inline CSS based on choices in "Settings" tab -->
+                        <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+                                <form method="post">
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="name">
+                                   Name
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="name" name="name" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="email1">
+                                   Email
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="email1" name="email1" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="password">
+                                   Password
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="password" name="password" type="text"/>
+                                  <span class="help-block" id="hint_password">
+                                   If you don't have a loot account, one will be created for you upon checkout. Your details will be in your order confirmation email.
+                                  </span>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="email">
+                                   Email
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="email" name="email" type="text"/>
+                                  <span class="help-block" id="hint_email">
+                                   We'll never share your email with anyone else
+                                  </span>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="number">
+                                   Number
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="number" name="number" placeholder="555-555-5555" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="pickup">
+                                   When can we pickup your package?
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="pickup" name="pickup" placeholder="MM/DD/YYYY" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label " for="pickuptime">
+                                   Time
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="pickuptime" name="pickuptime" placeholder="12:30PM" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="textarea">
+                                   Pickup address
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="10"></textarea>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="delivery">
+                                   When would you like it delivered?
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="delivery" name="delivery" placeholder="MM/DD/YYYY" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="textarea1">
+                                   Delivery Address
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <textarea class="form-control" cols="40" id="textarea1" name="textarea1" rows="10"></textarea>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField" for="deliverytime">
+                                   Time
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <input class="form-control" id="deliverytime" name="deliverytime" type="text"/>
+                                 </div>
+                                 <div class="form-group ">
+                                  <label class="control-label requiredField">
+                                   Check all that apply
+                                   <span class="asteriskField">
+                                    *
+                                   </span>
+                                  </label>
+                                  <div class=" ">
+                                   <div class="checkbox">
+                                    <label class="checkbox">
+                                     <input name="checkbox" type="checkbox" value="Temperature sensitive"/>
+                                     Temperature sensitive
+                                    </label>
+                                   </div>
+                                   <div class="checkbox">
+                                    <label class="checkbox">
+                                     <input name="checkbox" type="checkbox" value="Heavier than 15lbs"/>
+                                     Heavier than 15lbs
+                                    </label>
+                                   </div>
+                                   <div class="checkbox">
+                                    <label class="checkbox">
+                                     <input name="checkbox" type="checkbox" value="Larger than 2'x2'"/>
+                                     Larger than 2'x2'
+                                    </label>
+                                   </div>
+                                   <span class="help-block" id="hint_checkbox">
+                                    Extra charges will be added as necessary
+                                   </span>
+                                  </div>
+                                 </div>
+                                    <div>You'll be taken to the checkout page where you'll be able to submit the specifics of your loot, confirm your messenger, and pay.</div>
+                                    <br><br>
+                                 <div class="form-group">
+                                  <div>
+                                   <button class="btn btn-primary btn-lg btn-block center-block" name="submit" type="submit">
+                                    Submit
+                                   </button>
+                                  </div>
+                                 </div>
+                                </form>
+                                <br><br><br><br>
+                               </div>
+                              </div>
+                             </div>
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+
                 </body>
             </html>

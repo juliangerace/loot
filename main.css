@@ -1,35 +1,35 @@
 .header {
-    background-color: #46B4CE !important;
     background:  url(images/loot-whiteArtboard%201@0.75x.png) no-repeat center center;
+    background-color: #46B4CE!important;
     background-size: 30%;
-    position: relative;
-    margin-top: 25px;
     height: 20em;
+    margin-top: 25px;
+    position: relative;
 }
 
 
 .btn{
+   background-color:#46B4CE;
+   color: white;  
    margin-left:10px;
-    background-color:#46B4CE;
-    color: white;  
 }
 
 /*navbar AKA hell*/
 .navbar {
-    margin-top: -30px;
     margin-right: -40px;
+    margin-top: -30px;
 
 }
 
-.navbar-transparent .navbar-nav > li > a, .navbar-transparent .navbar-brand {color: #292727; border-radius: 10px;!important background-color: #46B4CE!important;}
-.navbar-transparent .navbar-nav > li > a:hover {background-color: #46B4CE!important; color: #ffffff!important; border-radius: 10px!important;}
+.navbar-transparent .navbar-nav > li > a, .navbar-transparent .navbar-brand {color: #292727; border-radius: 10px;}
+.navbar-transparent .navbar-nav > li > a:hover {background-color: #46B4CE; color: #ffffff; border-radius: 10px;}
 .navbar-transparent .navbar-nav > li > a:focus {color: #46B4CE; background-color: #FFFFFF; border-radius: 0;}
 
 
 @media only screen and (max-width: 766px) {
 .collapsing, .in {background-color: #46B4CE;}
 .collapsing ul li a, .in ul li a {color: #FFFFFF!important;}
-.collapsing ul li a:hover, .in ul li a:hover {color: #46B4CE!important; background-color: white!important;}
+.collapsing ul li a:hover, .in ul li a:hover {background-color: white!important; color: #46B4CE!important;}
 }
 
 
@@ -40,37 +40,37 @@
 /*Hero image*/
 
 .lootIntro{
-    position: absolute;
+    background: #d1d1d1;
     background: none repeat scroll 0 0 rgba(209, 209, 209, 0.42);
+    border-radius: 10px;
     margin:  5%;
     margin-top: -60%;
-    text-align:center;
     position: relative;
+    text-align:center;
     width:50%;
-    border-radius: 10px;
 }
 .game-change {
     font-size: 2.5em;
 }
 
 .thumbnail{
+    height:40em;
     margin: 0 auto; 
+    overflow:hidden;
     position:relative;
     text-align: center;
-    height:40em;
-    overflow:hidden;
 }
 
 @media (min-width: 768px) {
     .lootIntro {
-    position: absolute;
+    background: #d1d1d1;
     background: none repeat scroll 0 0 rgba(209, 209, 209, 0.42);
+    border-radius: 10px;
     margin: 10 auto;
     margin-top: -60%;
-    text-align:center;
     position: relative;
+    text-align:center;
     width:50%;
-    border-radius: 10px;
     }
 }
 /*extra small devices*/
@@ -80,16 +80,17 @@
         height: 10em;
   }
     .lootIntro {
-        width: 60%;
+        background: rgb(145, 145, 145);
         background: none repeat scroll 0 0 rgba(145, 145, 145, 0.6);
         margin-top: -55%;
+        width: 60%;
   }
     .game-change {
         font-size: 170%;
   }
     .hero-line {
-        margin-top: .7em;
         margin-bottom: 0.7em;
+        margin-top: 0.7em;
   }
     .hero-sub {
         font-size: 100%;
@@ -99,9 +100,9 @@
       margin-top: -1.5em;
     }
     .lootBlue {
-        width: 70%;
         margin: 0 auto;
         margin-bottom: -2.5em;
+        width: 70%;
     }
     .delivery {
         font-size: 1.8em;
@@ -111,11 +112,11 @@
         margin-bottom: -2em;
     }
        .map {
-        max-width: 80%;
-        height:auto;
         display: block;
-        margin-right: auto;
+        height:auto;
         margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
     }
 }
 /*Custom inbetween for hero image and header*/
@@ -139,8 +140,8 @@
         margin-bottom: -1;
     }
     .map {
-        max-width: 50%;
         height:auto;
+        max-width: 50%;
     }
     .bodycopy {
         font-size: 1.2em;
@@ -159,8 +160,8 @@
         font-size: 230%;
     }
     .hero-line {
-        margin-top: 1.5em;
         margin-bottom: 1.5em;
+        margin-top: 1.5em;
     }
     .hero-sub {
         font-size: 130%;
@@ -172,8 +173,8 @@
         height:25em;
     }
     .lootBlue {
-        width:50%;
         margin-bottom: 0;
+        width:50%;
     }
     .delivery {
         font-size: 3em;
@@ -196,8 +197,8 @@
         font-size: 330%;
     }
     .hero-line {
-        margin-top: 2em;
         margin-bottom: 2em;
+        margin-top: 2em;
     }
     .hero-sub {
         font-size: 160%;
@@ -220,17 +221,18 @@
     font-family: 'Open Sans', sans-serif;
 }
 .hire {
-    position: absolute;
     margin-top: -0px; 
+    position: absolute;
 }
 .lootHire{
-    position: absolute;
+    background: #d1d1d1;
     background: none repeat scroll 0 0 rgba(209, 209, 209, 0.42);
+    border-radius: 10px;
     margin:  45%;
     margin-top: -50%;
+    position: absolute;
     text-align:center;
     width:50%;
-    border-radius: 10px;
 }
 .hire-image {
     margin-top: .5em;
@@ -246,30 +248,27 @@
 
 
 
-
+/*
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+}*/
 
 body {
-  font-family: 'Nunito', sans-serif;
   color: #384047;
+  font-family: 'Nunito', sans-serif;
 }
 
 form {
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
+  margin: 10px auto;
+  max-width: 300px;
+  padding: 10px 20px;
 }
 
-h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
-}
+
 
 input[type="text"],
 input[type="password"],
@@ -283,6 +282,7 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
+  background: white;
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
@@ -303,29 +303,29 @@ input[type="checkbox"] {
 }
 
 select {
-  padding: 6px;
-  height: 32px;
   border-radius: 2px;
+  height: 32px;
+  padding: 6px;
 }
 
 button {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
   background-color: #4bc970;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
   border: 1px solid #3ac162;
+  border-radius: 5px;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
   margin-bottom: 10px;
+  padding: 19px 39px 18px 39px;
+  text-align: center;
+  width: 100%;
 }
 
 fieldset {
-  margin-bottom: 30px;
   border: none;
+  margin-bottom: 30px;
 }
 
 legend {
@@ -338,23 +338,23 @@ label {
   margin-bottom: 8px;
 }
 
-label.light {
-  font-weight: 300;
+.light {
   display: inline;
+  font-weight: 300;
 }
 
 .number {
   background-color: #5fcf80;
+  border-radius: 100%;
   color: #fff;
-  height: 30px;
-  width: 30px;
   display: inline-block;
   font-size: 0.8em;
-  margin-right: 4px;
+  height: 30px;
   line-height: 30px;
+  margin-right: 4px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
+  width: 30px;
 }
 
 @media screen and (min-width: 480px) {
