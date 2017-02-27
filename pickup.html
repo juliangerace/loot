@@ -2,249 +2,267 @@
 <html>
     
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Schedule a Pickup - loot</title>
-        <meta name="description" content="fast and personal messenger delivery service">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schedule a Pickup - loot</title>
+    <meta name="description" content="fast and personal messenger delivery service">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
-    </head>
-    
-    <body>
-        <!--jumbotron header-->
-        <div  class="container">
-            <div  class="jumbotron header">
-            </div>
+
+</head>
+
+<body>
+    <!--jumbotron header-->
+    <div class="container">
+        <div class="jumbotron header">
         </div>
-        <!-- Navbar, don't touch unless you want to cause yourself pain or really need to do it -->
-        <div class="container">
-            <div>
-            <nav class = "navbar navbar-transparent
-                          navbar-right" style="margin-right: 0;" role = "navigation">
-               <div class = "navbar-header">
-                  <button type = "button" class = "navbar-toggle" 
-                     data-toggle = "collapse" data-target = "#example-navbar-collapse">
-                     <span class = "sr-only">Toggle navigation</span>
-                     <span class = "icon-bar" style="background-color:black; margin-right: 15px;"></span>
-                     <span class = "icon-bar" style="background-color:black; margin-right: 15px;"></span>
-                     <span class = "icon-bar" style="background-color:black; margin-right: 15px;"></span>
-                  </button>
-               </div>
+    </div>
+    <!-- Navbar, don't touch unless you want to cause yourself pain or really need to do it -->
+    <div class="container">
+        <div>
+            <nav class="navbar navbar-transparent
+                          navbar-right" style="margin-right: 0;" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar" style="background-color:black; margin-right: 15px;"></span>
+                        <span class="icon-bar" style="background-color:black; margin-right: 15px;"></span>
+                        <span class="icon-bar" style="background-color:black; margin-right: 15px;"></span>
+                    </button>
+                </div>
 
-               <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
-                  <ul class = "nav navbar-nav">
-                     <li><a href = "index.html">home</a></li>
-                     <li><a href = "info.html">what's loot?</a></li>
-                     <li class="active"><a href= "gear.html">get some gear</a></li>
-                     <li><div class="navbar-btn"><a href="pickup.html" class="btn btn-info">Schedule a pickup</a></div></li>
-                     <li><div class="navbar-btn"><a href="delivery.html" class="btn btn-success">Schedule a delivery</a></div></li>
-                      
-                  </ul>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="info.html">what's loot?</a></li>
+                        <li class="active"><a href="gear.html">get some gear</a></li>
+                        <li>
+                            <div class="navbar-btn"><a href="pickup.html" class="btn btn-info">Schedule a pickup</a></div>
+                        </li>
+                        <li>
+                            <div class="navbar-btn"><a href="delivery.html" class="btn btn-success">Schedule a delivery</a></div>
+                        </li>
 
-               </div>
+                    </ul>
+
+                </div>
             </nav>
         </div>
-        </div>
-        <div class="container">
-            <div class="row">
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
-                <h5>At loot, we consider a pickup to be when one of our messengers travels to a location to get something and bring it to you. A delivery is where we get something from you and bring it to someone else.</h5>
-                </div>
+                <h4 style="background-color: #a8a8a8; color:white; padding: 30px;">At loot, we consider a pickup to be when one of our messengers travels to a location to get something and bring it to you. A delivery is where we get something from you and bring it to someone else.<br></h4>
             </div>
-            <br>
-            <hr style="background-color: #46B4CE; height: 1px; margin: 0%;">
-            <br>
-            <div class="row">
-            <div class="col-sm-5 col-sm-offset-1">
-                <h3>Its a lot easier with our app! </h3><br><h4>Download the loot app now to have guided help, a visual interface, and automatic updates on the process.</h4>
-                </div>
+        </div>
+        <br>
+        <hr style="background-color: #46B4CE; height: 1px; margin: 0%;">
+        <br>
+        <div class="row" style="background-color: #46B4CE">
+            <div class="col-sm-5 col-sm-offset-1" style="color:white; margin-top: 50px;">
+                <h3>Its a lot easier with our app! </h3>
+                <hr style="background-color:white;">
+                <h4>Download the loot app now to have guided help, a visual interface, and automatic updates on the process.</h4>
             </div>
-            <br>
-            <hr style="background-color: #46B4CE; height: 1px; margin: 0%;">
-            <br>
-            <div class="row" style="background-color: #46B4CE; border-radius: 10px 10px 0px 0px;">
-                <div class="col-sm-8 col-sm-offset-2">
-                                <!-- Inline CSS based on choices in "Settings" tab -->
-                        <style>.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
-                                <br><br>
-                                <form method="post">
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="name">
-                                   Name
-                                   <span class="asteriskField">
+            <div class="col-sm-4 col-sm-offset-1">
+                <img src="images/hand-template.png" alt="loot app in hand" class="img-responsive" style="max-height: 300px; margin: 0 auto;">
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #46B4CE; border-radius: 0;">
+            <div class="col-sm-8 col-sm-offset-2">
+                <!-- Inline CSS based on choices in "Settings" tab -->
+                <style>
+                    .bootstrap-iso form button,
+                    .bootstrap-iso form button:hover {
+                        color: white !important;
+                    }
+                    
+                    .asteriskField {
+                        color: red;
+                    }
+                </style>
+                <br>
+                <br>
+                <hr style="background-color:white">
+                <form method="post">
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="name">
+                            Name
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="name" name="name" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="email1">
-                                   Email
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="name" name="name" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="email1">
+                            Email
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="email1" name="email1" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="password">
-                                   Password
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="email1" name="email1" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="password">
+                            Password
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="password" name="password" type="text"/>
-                                  <span class="help-block" id="hint_password">
+                        </label>
+                        <input class="form-control" id="password" name="password" type="text" />
+                        <span class="help-block" id="hint_password">
                                    If you don't have a loot account, one will be created for you upon checkout. Your details will be in your order confirmation email.
                                   </span>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="email">
-                                   Email
-                                   <span class="asteriskField">
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="email">
+                            Email
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="email" name="email" type="text"/>
-                                  <span class="help-block" id="hint_email">
+                        </label>
+                        <input class="form-control" id="email" name="email" type="text" />
+                        <span class="help-block" id="hint_email">
                                    We'll never share your email with anyone else
                                   </span>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="number">
-                                   Number
-                                   <span class="asteriskField">
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="number">
+                            Number
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="number" name="number" placeholder="555-555-5555" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="pickup">
-                                   When can we pickup your package?
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="number" name="number" placeholder="555-555-5555" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="pickup">
+                            When can we pickup your package?
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="pickup" name="pickup" placeholder="MM/DD/YYYY" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label " for="pickuptime">
-                                   Time
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="pickup" name="pickup" placeholder="MM/DD/YYYY" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label " for="pickuptime">
+                            Time
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="pickuptime" name="pickuptime" placeholder="12:30PM" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="textarea">
-                                   Pickup address
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="pickuptime" name="pickuptime" placeholder="12:30PM" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="textarea">
+                            Pickup address
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="10"></textarea>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="delivery">
-                                   When would you like it delivered?
-                                   <span class="asteriskField">
+                        </label>
+                        <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="10"></textarea>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="delivery">
+                            When would you like it delivered?
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="delivery" name="delivery" placeholder="MM/DD/YYYY" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="textarea1">
-                                   Delivery Address
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="delivery" name="delivery" placeholder="MM/DD/YYYY" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="textarea1">
+                            Delivery Address
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <textarea class="form-control" cols="40" id="textarea1" name="textarea1" rows="10"></textarea>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField" for="deliverytime">
-                                   Time
-                                   <span class="asteriskField">
+                        </label>
+                        <textarea class="form-control" cols="40" id="textarea1" name="textarea1" rows="10"></textarea>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField" for="deliverytime">
+                            Time
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <input class="form-control" id="deliverytime" name="deliverytime" type="text"/>
-                                 </div>
-                                 <div class="form-group ">
-                                  <label class="control-label requiredField">
-                                   Check all that apply
-                                   <span class="asteriskField">
+                        </label>
+                        <input class="form-control" id="deliverytime" name="deliverytime" type="text" />
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label requiredField">
+                            Check all that apply
+                            <span class="asteriskField">
                                     *
                                    </span>
-                                  </label>
-                                  <div class=" ">
-                                   <div class="checkbox">
-                                    <label class="checkbox">
-                                     <input name="checkbox" type="checkbox" value="Temperature sensitive"/>
-                                     Temperature sensitive
-                                    </label>
-                                   </div>
-                                   <div class="checkbox">
-                                    <label class="checkbox">
-                                     <input name="checkbox" type="checkbox" value="Heavier than 15lbs"/>
-                                     Heavier than 15lbs
-                                    </label>
-                                   </div>
-                                   <div class="checkbox">
-                                    <label class="checkbox">
-                                     <input name="checkbox" type="checkbox" value="Larger than 2'x2'"/>
-                                     Larger than 2'x2'
-                                    </label>
-                                   </div>
-                                   <span class="help-block" id="hint_checkbox">
+                        </label>
+                        <div class=" ">
+                            <div class="checkbox">
+                                <label class="checkbox">
+                                    <input name="checkbox" type="checkbox" value="Temperature sensitive" /> Temperature sensitive
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox">
+                                    <input name="checkbox" type="checkbox" value="Heavier than 15lbs" /> Heavier than 15lbs
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox">
+                                    <input name="checkbox" type="checkbox" value="Larger than 2'x2'" /> Larger than 2'x2'
+                                </label>
+                            </div>
+                            <span class="help-block" id="hint_checkbox">
                                     Extra charges will be added as necessary
                                    </span>
-                                  </div>
-                                 </div>
-                                    <div>You'll be taken to the checkout page where you'll be able to submit the specifics of your loot, confirm your messenger, and pay.</div>
-                                    <br><br>
-                                 <div class="form-group">
-                                  <div>
-                                   <button class="btn btn-primary btn-lg btn-block center-block" name="submit" type="submit">
-                                    Submit
-                                   </button>
-                                  </div>
-                                 </div>
-                                </form>
-                                <br><br><br><br>
-                               </div>
-                              </div>
-            <div class="row" style="background-color: #46B4CE; border-radius: 0px 0px 10px 10px;">
-                <div class="col-sm-3" >
-                    <img src="images/loot-whiteArtboard%201@0.75x.png" alt="loot logo blue" style="height:100px;" class="img-responsive;">
-                </div>
-                <div class="col-sm-3 col-sm-offset-6">
-                    <h4 style="text-align: right; color:white;">100 Circle Way<br>Cupertino, California 97842<br>885 435-5098<hr><a href="mailto:support@loot.com">support@loot.com</a><br><br><br></h4>
-                </div>
-                             </div>
-<script>
-    $(document).ready(function(){
-        var date_input=$('input[name="date"]'); //our date input has the name "date"
-        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-        date_input.datepicker({
-            format: 'mm/dd/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-        })
-    })
-</script>
+                        </div>
+                    </div>
+                    <div>You'll be taken to the checkout page where you'll be able to submit the specifics of your loot, confirm your messenger, and pay.</div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div>
+                            <button class="btn btn-primary btn-lg btn-block center-block" name="submit" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
         </div>
-                </body>
+        <div class="row" style="background-color: #46B4CE; border-radius: 0px 0px 10px 10px;">
+            <div class="col-sm-3">
+                <img src="images/loot-whiteArtboard%201@0.75x.png" alt="loot logo blue" style="height:100px;" class="img-responsive;">
+            </div>
+            <div class="col-sm-3 col-sm-offset-6">
+                <h4 style="text-align: right; color:white;">100 Circle Way<br>Cupertino, California 97842<br>885 435-5098<hr><a href="mailto:support@loot.com">support@loot.com</a><br><br><br></h4>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                var date_input = $('input[name="date"]'); //our date input has the name "date"
+                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+                date_input.datepicker({
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                })
+            })
+        </script>
+    </div>
+</body>
             </html>
